@@ -129,19 +129,7 @@ color:var(--green);
 display:grid;
 
 grid-template-columns:1fr 1fr;
-@media (max-width:768px){
 
-.hero{
-
-grid-template-columns:1fr;
-
-gap:40px;
-
-padding:40px 25px;
-
-}
-
-}
 
 gap:80px;
 
@@ -181,7 +169,7 @@ align-items:center;
 
 font-family:'Space Grotesk',sans-serif;
 
-font-size:7rem;
+font-size:6.2rem;
 
 line-height:.9;
 
@@ -198,7 +186,7 @@ text-transform:uppercase;
 font-size:1.3rem;
 
 margin-bottom:40px;
-
+max-width:560px;
 }
 
 
@@ -352,7 +340,7 @@ background:var(--lime);
 
 border-radius:40px;
 
-padding:90px 70px;
+padding:60px;
 
 display:flex;
 
@@ -364,8 +352,8 @@ align-items:center;
 
 .hero-card img{
 
-width:78%;
-
+width:70%;
+max-width:420px;
 transition:.35s;
 
 }
@@ -571,7 +559,7 @@ margin-top:auto;
 
 .event-poster video{
 
-    width:100%;
+
 
     display:block;
 
@@ -579,9 +567,15 @@ margin-top:auto;
 
     object-fit:cover;
 
-    max-height:860px;
+    max-height:660px;
 
+    width:100%;
+    max-width:380px;
+    display:block;
+    margin:0 auto;
+    border-radius:28px;
 }
+
 
 .event-date{
 
@@ -676,5 +670,132 @@ footer p:nth-child(3){
 .social-link a:hover{
 
     color:var(--green);
+
+}/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width:768px){
+
+.hero{
+    grid-template-columns:1fr;
+    gap:30px;
+    padding:40px 25px;
+    margin:25px auto;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero-text{
+    font-size:1.1rem;
+}
+
+.hero-card{
+    padding:25px;
+}
+
+.hero-card img{
+    width:60%;
+    max-width:220px;
+    transition:.4s ease;
+
+
+}
+
+.navbar{
+    width:95%;
+    padding:15px 20px;
+}
+
+.nav-links{
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.nav-links a{
+    font-size:.9rem;
+}
+
+.logo img{
+    height:40px;
+}
+
+.featured-event{
+    padding:40px 25px;
+}
+
+.event-card{
+    padding:25px;
+}
+
+.event-photo img,
+.event-photo video{
+    width:100%;
+    height:auto;
+    margin-top:20px;
+}
+
+.button{
+    width:100%;
+    max-width:260px;
+}
+
+/* Discover */
+
+.discover{
+    padding:50px 25px;
+}
+
+.discover h2{
+    font-size:3rem;
+}
+
+.discover-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+}
+
+.discover-card{
+    padding:32px;
+    transition:.35s ease;
+
+}
+
+.discover-card h3{
+    font-size:1.8rem;
+}
+
+} 
+/* ====================================
+   ABOUT
+==================================== */
+
+.about-photo{
+
+    width:min(92%,1400px);
+
+    margin:100px auto;
+
+}
+
+.about-photo img{
+
+    width:100%;
+
+    max-width:900px;
+
+    display:block;
+
+    margin:0 auto;
+
+    border-radius:40px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
 
 }
