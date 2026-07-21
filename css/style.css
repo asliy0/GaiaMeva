@@ -776,6 +776,49 @@ footer p:nth-child(3){
    ABOUT
 ==================================== */
 
+.page-hero{
+
+    width:min(92%,900px);
+
+    margin:140px auto 120px;
+
+    text-align:center;
+
+}
+
+.page-hero h1{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:4.5rem;
+
+    line-height:.92;
+
+    color:var(--forest);
+
+    margin-bottom:40px;
+
+}
+.page-hero .eyebrow{
+
+    margin-bottom:35px;
+
+}
+.page-intro{
+
+    font-size:1.5rem;
+
+    color:var(--green);
+
+    font-style:italic;
+
+    letter-spacing:1px;
+
+    max-width:550px;
+
+    margin:0 auto;
+
+}
 .about-photo{
 
     width:min(92%,1400px);
@@ -797,5 +840,264 @@ footer p:nth-child(3){
     border-radius:40px;
 
     box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+}
+.about-story{
+
+    width:min(92%,760px);
+
+    margin:120px auto;
+
+}
+
+.about-story h2{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:3.2rem;
+
+    color:var(--forest);
+
+    margin-bottom:35px;
+
+}
+
+.about-story p{
+
+    font-size:1.3rem;
+
+    line-height:2;
+
+    color:var(--text);
+
+}
+/* ====================================
+   ABOUT VALUES
+==================================== */
+
+.about-values{
+
+    width:min(92%,1400px);
+
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+.value-card{
+
+    background:white;
+
+    padding:55px;
+
+    border-radius:40px;
+
+    min-height:320px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+.value-card span{
+
+    font-size:2.5rem;
+
+    display:block;
+
+}
+.value-card h3{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:2.2rem;
+
+    color:var(--forest);
+
+    margin-bottom:28px;
+
+}
+.value-card p{
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    color:var(--text);
+
+}
+.value-card:hover{
+
+    background:var(--lime);
+
+    transform:translateY(-10px) rotate(-1deg);
+
+}
+/* ====================================
+   ABOUT CLOSING
+==================================== */
+
+.about-closing{
+
+    width:min(92%,900px);
+
+    margin:140px auto;
+
+    text-align:center;
+
+}.about-closing h2{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:4rem;
+
+    color:var(--forest);
+
+    margin-bottom:35px;
+
+}
+.about-closing p{
+
+    font-size:1.3rem;
+
+    line-height:2;
+
+    max-width:650px;
+
+    margin:20px auto;
+
+}
+.about-closing p:last-child{
+
+    color:var(--green);
+
+    font-weight:700;
+
+    font-size:1.5rem;
+
+    margin-top:50px;
+
+}
+
+/* ====================================
+   CONTACT
+==================================== */
+
+.contact-grid{
+
+    width:min(92%,1200px);
+    margin:120px auto;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:80px;
+    align-items:start;
+
+}
+
+.contact-info h2{
+
+    font-family:"Space Grotesk",sans-serif;
+    font-size:3rem;
+    line-height:1.1;
+    color:var(--forest);
+    margin-bottom:50px;
+
+}
+
+.contact-item{
+
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-bottom:30px;
+
+}
+
+
+.contact-icon{
+
+    width:22px;
+    flex-shrink:0;
+    margin-top:4px;
+
+}
+
+.contact-item p{
+
+    margin:0;
+    font-size:1.1rem;
+    line-height:1.6;
+
+}
+.contact-item a{
+
+    color:var(--green);
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.contact-item a:hover{
+
+    color:var(--forest);
+
+}
+
+.contact-form{
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+    background:white;
+    padding:40px;
+    border-radius:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    background:var(--cream);
+    border-radius:20px;
+    padding:18px 20px;
+}
+
+.contact-form textarea{
+
+    min-height:180px;
+    resize:vertical;
+
+}
+
+.contact-form .button{
+
+    width:auto;
+    align-self:flex-start;
+    padding:18px 40px;
+
+}
+.contact-intro{
+
+    max-width:420px;
+    margin:0 0 45px;
+
+    font-size:1.15rem;
+    line-height:1.8;
+
+    color:#55635a;
+    font-style:italic;
 
 }
