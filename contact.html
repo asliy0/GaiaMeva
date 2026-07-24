@@ -1,4 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gaia Meva | Creative Space in El Raval, Barcelona</title>
+<link rel="icon" type="image/png" href="images/branding/hand.png">
+
 <link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<img src="images/branding/hand.png"
+alt="Gaia Meva">
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="events.html">Events</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav><link rel="stylesheet" href="css/style.css">
 <section class="contact-grid">
 
     <div class="contact-info">
@@ -40,17 +87,31 @@
 
     </div>
 
-    <form class="contact-form">
+    <form
+    action="https://formspree.io/f/xvzewlyk"
+    method="POST"
+    class="contact-form">
 
-        <input type="text" placeholder="Your name">
+        <input
+    type="text"
+    name="name"
+    placeholder="Your name"
+    required>
 
-        <input type="email" placeholder="Email">
+<input
+    type="email"
+    name="email"
+    placeholder="Email"
+    required>
 
-        <textarea placeholder="Tell us what's on your mind"></textarea>
-
-        <button class="button">
-            Send message
-        </button>
+<textarea
+    name="message"
+    placeholder="Tell us what's on your mind"
+    required></textarea>
+    
+  <button type="submit" class="button">
+    Send message
+</button>
 
     </form>
 
